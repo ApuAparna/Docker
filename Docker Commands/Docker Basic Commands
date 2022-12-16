@@ -54,5 +54,7 @@ docker kill (container id)         # docker stop is also same but the difference
 
 # To push a image to docker hub:
 
-docker push (container images)     # Before push logion into the docker hub in terminal.
+docker login
+
+docker push (image name)     # Before push logion into the docker hub in terminal.
 
