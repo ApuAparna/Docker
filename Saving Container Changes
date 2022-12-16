@@ -1,0 +1,26 @@
+# Saving Container Changes:
+# If container delete or stop due to some issue, the whole content in the container get lost to overcome this problem we can save it as a image using container id.
+
+Step-1 : Create a Docker image.
+
+      docker pull ubuntu
+
+Step-2 : Run the docker image.
+
+     docker run -itd (image id)
+
+Step-3 : Get into the container.
+
+     docker exec -it (Container id)
+
+Step-4 : Make some directory or install some tools and 
+
+Step-5 : Come out from the container.
+
+Step-6 : Run the below command to save the container changes.
+
+      docker commit (container id) (give some name for the image)
+
+      Example: docker commit 7a12fg container2
+
+Step-7 : Run the image and get into the container and see if it saves or not.   
