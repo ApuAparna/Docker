@@ -1,0 +1,58 @@
+# To check Docker Version :
+
+docker --version 
+
+# To pull the image :
+
+docker pull redis
+
+#To see the Images:
+
+docker images
+
+# To run the docker Images:
+
+docker run -it -d redis     # -it denotes interactive/ To keep the container
+                            # -d denoted declaractive / To run the container in background it is not in use.
+
+# To see the running container only :
+
+docker ps
+
+# To see both stopped and running container:
+
+docker ps -a 
+
+# To get into the container and work:
+
+docker exec -it (container id) bash      # bash command is used to run the container in current terminal
+
+# To Stop the Container :
+
+docker stop (container id)
+
+# To start the container :
+
+docker start (container id)
+
+# To remove the container :
+
+docker rm (container id)
+
+# To remove the running container:
+
+docker rm -f (container id)
+
+# To remove a image:
+
+docker rmi (image id)
+
+# To stop the immediately:
+
+docker kill (container id)         # docker stop is also same but the difference between kill and stop is kill suddenly stop the container
+                                   Stop command give some time(or)take some time to stop the container.
+
+# To push a image to docker hub:
+
+docker push (container images)     # Before push logion into the docker hub in terminal.
+
