@@ -13,14 +13,12 @@ Step-3 : Get into the container.
 
      docker exec -it (Container id)
 
-Step-4 : Make some directory or install some tools and 
+Step-4 : Make some directory or install some tools and Come out from the container.
 
-Step-5 : Come out from the container.
-
-Step-6 : Run the below command to save the container changes.
+Step-5 : Run the below command to save the container changes.
 
       docker commit (container id) (give some name for the image)
 
       Example: docker commit 7a12fg container2
 
-Step-7 : Run the image and get into the container and see if it saves or not.   
+Step-6 : Run the image and get into the container and see if it saves or not.   
