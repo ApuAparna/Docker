@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  #Nginx Service
+  webserver:
+    image: nginx
+    container_name: nginx-container
+    restart: unless-stopped
+    ports:
+      - "90:80"
+      - "443:443"
+  #MySQL Service
+  db:
+    image: mysql:5.7.22
+    container_name: mysql-container
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: mysql
+      MYSQL_ROOT_PASSWORD: mysql
