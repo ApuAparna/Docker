@@ -1,0 +1,11 @@
+# Building A Docker Image:
+
+docker build -t (name -jenkins-image) .
+
+# Run it as Container:
+
+docker run -itd -p 8090:8080 --name jenkins-container (image id)
+
+#Get into the Container:
+
+docker exec -it (Container-id) bash
